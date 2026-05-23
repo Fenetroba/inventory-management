@@ -16,10 +16,11 @@ const page = () => {
         <button onClick={() => setopen(!open)} className="absolute top-1 mt-2 left-2 border border-[var(--topNav)] p-2 text-sm rounded-[7px]">
           Create Product +
         </button>
+        <h1 className='max-sm:hidden text-center pt-4 font-extrabold text-[#c0e4a4]'>Inventory Management System </h1>
       </div>
-      <div className='flex w-full max-sm:'>
+      <div className='flex  relative overflow-auto'>
         <Create_Product_Form open={open} />
-        <Fetch_data open={open} />
+        <Fetch_data />
       </div>
     </section>
   )
